@@ -1,1 +1,1 @@
-Simple date get helpers
+Simple date get helpers for personal use
