@@ -1,1 +1,1 @@
-# simple-date
+Simple get date helpers
