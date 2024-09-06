@@ -10,60 +10,56 @@ import {
 /**
  * @param {object} [opts]
  * @param {string|number|Date} [opts.init]
- * @param {string} [opts.ymdSeparator]
+ * @param {string} [opts.separator]
  */
-export const getDateYMD = ({init, ymdSeparator = '.'} = {}) => [
+export const getDateYMD = ({init, separator = '.'} = {}) => [
     getDateYear({init}),
     getDateMonth({init}),
     getDateDay({init}),
-].join(ymdSeparator);
+].join(separator);
 
 /**
  * @param {object} [opts]
  * @param {string|number|Date} [opts.init]
- * @param {string} [opts.dmySeparator]
+ * @param {string} [opts.separator]
  */
-export const getDateDMY = ({init, dmySeparator = '.'} = {}) => [
+export const getDateDMY = ({init, separator = '.'} = {}) => [
     getDateDay({init}),
     getDateMonth({init}),
     getDateYear({init}),
-].join(dmySeparator);
+].join(separator);
 
 /**
  * @param {object} [opts]
  * @param {string|number|Date} [opts.init]
- * @param {string} [opts.hmsSeparator]
+ * @param {string} [opts.separator]
  */
-export const getDateHMS = ({init, hmsSeparator = ':'} = {}) => [
+export const getDateHMS = ({init, separator = ':'} = {}) => [
     getDateHour({init}),
     getDateMinute({init}),
     getDateSecond({init}),
-].join(hmsSeparator);
+].join(separator);
 
 /**
  * @param {object} [opts]
  * @param {string|number|Date} [opts.init]
- * @param {string} [opts.ymdSeparator]
- * @param {string} [opts.hmsSeparator]
- * @param {string} [opts.ymdhmsSeparator]
+ * @param {string[]} opts.separators
  */
-export const getDateYMDHMS = ({init, ymdSeparator = '.', hmsSeparator = ':', ymdhmsSeparator = ' '} = {}) => {
-    const ymd = getDateYMD({init, ymdSeparator});
-    const hms = getDateHMS({init, hmsSeparator});
+export const getDateYMDHMS = ({init, separators = ['.', ':', ' ']} = {}) => {
+    const ymd = getDateYMD({init, separator: separators[0]});
+    const hms = getDateHMS({init, separator: separators[1]});
 
-    return ymd + ymdhmsSeparator + hms;
+    return ymd + separators[2] + hms;
 };
 
 /**
  * @param {object} [opts]
  * @param {string|number|Date} [opts.init]
- * @param {string} [opts.dmySeparator]
- * @param {string} [opts.hmsSeparator]
- * @param {string} [opts.hmsdmySeparator]
+ * @param {string[]} opts.separators
  */
-export const getDateHMSDMY = ({init, dmySeparator = '.', hmsSeparator = ':', hmsdmySeparator = ' '} = {}) => {
-    const hms = getDateHMS({init, hmsSeparator});
-    const dmy = getDateDMY({init, dmySeparator});
+export const getDateHMSDMY = ({init, separators = [':', '.', ' ']} = {}) => {
+    const hms = getDateHMS({init, separator: separators[0]});
+    const dmy = getDateDMY({init, separator: separators[1]});
 
-    return hms + hmsdmySeparator + dmy;
+    return hms + separators[2] + dmy;
 };
