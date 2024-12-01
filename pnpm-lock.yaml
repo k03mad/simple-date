@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@k03mad/eslint-config':
-        specifier: 26.3.0
-        version: 26.3.0(eslint@9.15.0)(typescript@5.6.2)(vue-eslint-parser@9.4.3(eslint@9.15.0))
+        specifier: 27.0.0
+        version: 27.0.0(eslint@9.15.0)(typescript@5.6.2)(vue-eslint-parser@9.4.3(eslint@9.15.0))
       eslint:
         specifier: 9.15.0
         version: 9.15.0
@@ -37,10 +37,6 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
-
-  '@eslint-community/regexpp@4.11.1':
-    resolution: {integrity: sha512-m4DVN9ZqskZoLU5GlWZadwDnYo3vAEydiUayB9widCl9ffWx2IvPnp6n3on5rJmziJSw9Bv+Z3ChDVdMwXCY8Q==}
-    engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
 
   '@eslint-community/regexpp@4.12.1':
     resolution: {integrity: sha512-CCZCDJuduB9OUkFkY2IgppNZMi2lBQgD2qzwXkEia16cge2pijY/aXi96CJMquDMn3nJdlPV1A5KrJEXwfLNzQ==}
@@ -90,8 +86,8 @@ packages:
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
 
-  '@k03mad/eslint-config@26.3.0':
-    resolution: {integrity: sha512-XVzRaclI3YvL1i+lvjUs3cPDeLl0ds74jteA3i4PkhVg9gfLfdAPX52VqDHwXd5nMo517eMeFb2+SHZCKDhgTQ==}
+  '@k03mad/eslint-config@27.0.0':
+    resolution: {integrity: sha512-f++2aTrQPgaXzXAXjLVKg/h78xnXGmxEsGynxVkFyG8T0K6bl3dNdV8YeInZMTxYtLB9xxzJ+uHsusI0ElMuoA==}
     engines: {node: '>=22'}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -891,8 +887,6 @@ snapshots:
       eslint: 9.15.0
       eslint-visitor-keys: 3.4.3
 
-  '@eslint-community/regexpp@4.11.1': {}
-
   '@eslint-community/regexpp@4.12.1': {}
 
   '@eslint/config-array@0.19.0':
@@ -940,7 +934,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
-  '@k03mad/eslint-config@26.3.0(eslint@9.15.0)(typescript@5.6.2)(vue-eslint-parser@9.4.3(eslint@9.15.0))':
+  '@k03mad/eslint-config@27.0.0(eslint@9.15.0)(typescript@5.6.2)(vue-eslint-parser@9.4.3(eslint@9.15.0))':
     dependencies:
       '@eslint/js': 9.15.0
       '@stylistic/eslint-plugin': 2.10.1(eslint@9.15.0)(typescript@5.6.2)
@@ -1165,7 +1159,7 @@ snapshots:
   eslint-plugin-es-x@7.8.0(eslint@9.15.0):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.1(eslint@9.15.0)
-      '@eslint-community/regexpp': 4.11.1
+      '@eslint-community/regexpp': 4.12.1
       eslint: 9.15.0
       eslint-compat-utils: 0.5.1(eslint@9.15.0)
 
@@ -1235,7 +1229,7 @@ snapshots:
   eslint-plugin-regexp@2.7.0(eslint@9.15.0):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.1(eslint@9.15.0)
-      '@eslint-community/regexpp': 4.11.1
+      '@eslint-community/regexpp': 4.12.1
       comment-parser: 1.4.1
       eslint: 9.15.0
       jsdoc-type-pratt-parser: 4.1.0
@@ -1602,11 +1596,11 @@ snapshots:
 
   refa@0.12.1:
     dependencies:
-      '@eslint-community/regexpp': 4.11.1
+      '@eslint-community/regexpp': 4.12.1
 
   regexp-ast-analysis@0.7.1:
     dependencies:
-      '@eslint-community/regexpp': 4.11.1
+      '@eslint-community/regexpp': 4.12.1
       refa: 0.12.1
 
   regexp-tree@0.1.27: {}
@@ -1633,7 +1627,7 @@ snapshots:
 
   scslre@0.3.0:
     dependencies:
-      '@eslint-community/regexpp': 4.11.1
+      '@eslint-community/regexpp': 4.12.1
       refa: 0.12.1
       regexp-ast-analysis: 0.7.1
 
