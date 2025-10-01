@@ -1,6 +1,6 @@
 {
   "name": "@k03mad/simple-date",
-  "version": "4.15.1",
+  "version": "4.15.2",
   "description": "Simple get date library",
   "maintainers": [
     "Kirill Molchanov <k03.mad@gmail.com"
@@ -16,7 +16,7 @@
     "node": ">=22"
   },
   "devDependencies": {
-    "@k03mad/eslint-config": "29.13.1",
+    "@k03mad/eslint-config": "29.13.2",
     "eslint": "9.36.0",
     "husky": "9.1.7"
   },
